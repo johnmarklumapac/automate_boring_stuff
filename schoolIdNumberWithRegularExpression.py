@@ -1,5 +1,7 @@
 import re
 
+hi = input('Enter somthing:')
+
 phoneNumberRegex = re.compile(r'\d\d\d\d-\d\d\d-\d\d\d')
-mo = phoneNumberRegex.search('1111-222-333 bla bla bla')
+mo = phoneNumberRegex.search(hi)
 print(mo.group())
